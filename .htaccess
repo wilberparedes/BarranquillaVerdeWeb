@@ -1,0 +1,17 @@
+# Turn rewrite engine on
+Options +FollowSymlinks
+RewriteEngine on
+
+# map neat URL to internal URL
+RewriteRule ^login/  login.php  [nc,qsa]
+RewriteRule ^dashboard/  dashboard.php  [nc,qsa]
+RewriteRule ^cerrarsesion/  developer/logout.php  [nc,qsa]
+
+RewriteRule ^Menu  component/menu2.php  [nc,qsa]
+
+RewriteRule ^Lopersa/(\w+)/?$  developer/code.php?case=$1 [nc,qsa]
+RewriteRule ^ToExcel  developer/exportExcel.php [nc,qsa]
+RewriteRule ^DownloadToExcel  developer/exportExcelReport.php [nc,qsa]
+RewriteRule ^DownloadExcel/  developer/excel/ [nc,qsa]
+RewriteRule ^cLogin/(\w+)/?$  developer/codelogin.php?case=$1 [nc,qsa]
+
