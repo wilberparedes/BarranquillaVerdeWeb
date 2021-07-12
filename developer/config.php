@@ -2,7 +2,7 @@
 /*Configurar */
 define('host','localhost');
 define('user','postgres');
-define('pass','1234');
+define('pass','Umbr3ll42014.');
 define('dbname','barranquilla_verde');
 
 /*MySQL*/
